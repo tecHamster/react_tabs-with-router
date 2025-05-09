@@ -6,15 +6,7 @@ The `Tabs` page should also show a `Tabs` component implemented in [React Tabs](
 
 > Here is [the working version](https://mate-academy.github.io/react_tabs-with-router)
 
-1. Navigation with `Home` and `Tabs` links:
-    - should be visible on every page;
-    - should highlight an active link with `is-active` class;
-1. `TabsPage` page should work for both `/tabs` and `/tabs/:tabId` paths (use nested routes);
-    ```tsx
-    <Route path="tabs">
-      <Route index element={<TabsPage />} />
-      <Route path=":tabId" element={<TabsPage />} />
-    </Route>
+
     ```
 1. Each tab should update the URL on click. 
     - the URL should follow the next format `/tabs/:tabId` (use actual `tab.id` instead of `:tabId`);
